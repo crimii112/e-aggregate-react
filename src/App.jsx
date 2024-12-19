@@ -1,23 +1,28 @@
 import RootRoutes from '@/routes';
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-
-import '@/css/base.css';
-import '@/css/layout.css';
-import '@/css/component.css';
-import '@/css/page.css';
-import '@/css/response.css';
+import Header from '@/components/Header';
+import { BrowserRouter } from 'react-router-dom';
+import styled from 'styled-components';
 
 function App() {
   return (
-    <div className="wrap">
-      <React.StrictMode>
-        <Router>
+    <Container>
+      <BrowserRouter>
+        <Header />
+        <Body>
           <RootRoutes />
-        </Router>
-      </React.StrictMode>
-    </div>
+        </Body>
+      </BrowserRouter>
+    </Container>
   );
 }
 
 export default App;
+
+const Container = styled.div`
+  width: 100%;
+  margin: 0;
+`;
+
+const Body = styled.div`
+  padding: 10px;
+`;

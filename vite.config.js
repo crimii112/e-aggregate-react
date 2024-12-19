@@ -19,5 +19,12 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 100000000,
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
   },
 });
