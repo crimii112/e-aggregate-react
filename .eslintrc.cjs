@@ -18,5 +18,6 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
+    "no-var": "warn", // var 금지
   },
 };
