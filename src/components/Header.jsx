@@ -10,7 +10,7 @@ const Header = () => {
       <ul>
         <li>
           <NavLink
-            to="/"
+            to="/1"
             className={({ isActive }) => (isActive ? styles.a_active : '')}
           >
             측정소
@@ -18,7 +18,7 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            to="/"
+            to="/2"
             className={({ isActive }) => (isActive ? styles.a_active : '')}
           >
             측정소별 측정정보
@@ -26,7 +26,7 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            to="/"
+            to="/3"
             className={({ isActive }) => (isActive ? styles.a_active : '')}
           >
             시도별 측정정보
@@ -34,7 +34,7 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            to="/"
+            to="/4"
             className={({ isActive }) => (isActive ? styles.a_active : '')}
           >
             측정소+시도 측정정보
